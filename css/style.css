@@ -29,20 +29,15 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .header__search {
   margin-left: 41px;
 }
-
 .header__right {
   display: flex;
   column-gap: 33px;
   align-items: center;
 }
 
-/* .header__icons:not(:last-child) {
-    margin-right: 33px;
-} */
 .counter {
   position: absolute;
   background: #F16D7F;
@@ -67,36 +62,29 @@ a {
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
 }
-
 .promo__left {
   width: 50%;
 }
-
 .promo__right {
   width: 50%;
 }
-
 .promo__img {
   width: 100%;
 }
-
 .promo__content {
   margin-top: 30%;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
 }
-
 .promo__text {
   color: #F16D7F;
 }
-
 .promo__h1 {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
   color: #222222;
 }
-
 .promo__heading {
   font-weight: bold;
   font-size: 32px;
@@ -107,17 +95,17 @@ a {
   padding-top: 64px;
   padding-bottom: 96px;
 }
-
 .sale__box {
   display: flex;
   margin-bottom: 30px;
 }
-
 .sale__item {
   display: flex;
   position: relative;
 }
-
+.sale__item:not(:last-child) {
+  margin-right: 30px;
+}
 .sale__content {
   position: absolute;
   top: 0;
@@ -129,14 +117,12 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .sale__text {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
 }
-
 .sale__heading {
   font-weight: bold;
   font-size: 24px;
@@ -144,13 +130,8 @@ a {
   text-align: center;
   color: #F16D7F;
 }
-
 .sale__img {
   width: 100%;
-}
-
-.sale__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .catalog__name {
@@ -180,26 +161,21 @@ a {
   background: #F8F8F8;
   position: relative;
 }
-
 .product:hover .product__add {
   display: flex;
 }
-
 .product:hover .product__img {
   filter: brightness(50%);
 }
-
 .product__content {
   padding: 24px 16px 20px;
 }
-
 .product__name {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
 }
-
 .product__text {
   font-weight: 300;
   font-size: 14px;
@@ -207,7 +183,6 @@ a {
   color: #5D5D5D;
   padding-top: 12px;
 }
-
 .product__price {
   font-size: 16px;
   line-height: 19px;
@@ -215,7 +190,6 @@ a {
   padding-top: 18px;
   padding-bottom: 20px;
 }
-
 .product__add {
   display: none;
   justify-content: center;
@@ -231,16 +205,13 @@ a {
   top: 188px;
   left: 111px;
 }
-
 .product__add:hover {
   color: black;
   background-color: #fff;
 }
-
 .product__add:hover .product__cart path {
   fill: black;
 }
-
 .product__cart {
   margin-right: 11px;
 }
@@ -259,7 +230,6 @@ a {
   margin-top: 48px;
   margin-bottom: 95px;
 }
-
 .button:hover {
   background: #F16D7F;
   color: #FFFFFF;
@@ -414,11 +384,9 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .icon:hover .black {
   fill: #FFFFFF;
 }
-
 .icon:hover .white {
   fill: #F16D7F;
 }
@@ -438,9 +406,10 @@ a {
   height: 148px;
   background: #F8F3F4;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-/*Хлебные крошки*/
 .breadcrumb {
   list-style: none;
 }
@@ -449,7 +418,6 @@ a {
   display: inline;
   font-size: 18px;
 }
-
 .crumb:not(:first-child):before {
   padding: 8px;
   color: black;
@@ -462,16 +430,10 @@ a {
   line-height: 17px;
   color: #636363;
 }
-
 .path:hover {
   font-weight: 700;
   text-decoration: none;
   color: #F16D7F;
-}
-
-.top__heading {
-  display: flex;
-  justify-content: space-between;
 }
 
 .item-list {
@@ -494,11 +456,9 @@ a {
   line-height: 19px;
   color: #9F9F9F;
 }
-
 .page.active {
   color: #F16D7F;
 }
-
 .page:hover:not(.active) {
   background-color: #ddd;
 }
@@ -530,5 +490,7 @@ a {
 .sort {
   display: flex;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
