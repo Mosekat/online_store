@@ -432,17 +432,13 @@ a {
     justify-content: space-between;
 }
 
-.header__text {
+.heading__text {
     font-size: 24px;
     line-height: 29px;
     color: #F16D7F;
 }
 
-.top__heading {
-    height: 148px;
-    background: #F8F3F4;
-    align-items: center;
-}
+/* Страница каталога */
 
 /*Хлебные крошки*/
 
@@ -452,13 +448,13 @@ a {
 
 .crumb {
     display: inline;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .crumb:not(:first-child):before {
     padding: 8px;
-    color: black;
-    content: "/\00a0";
+    color: #636363;
+    content: "/";
 }
 
 .path {
@@ -469,14 +465,22 @@ a {
 }
 
 .path:hover {
-    font-weight: 700;
-    text-decoration: none;
+    color: #F16D7F;
+}
+
+.crumb:last-child .path {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
     color: #F16D7F
 }
 
 .top__heading {
     display: flex;
     justify-content: space-between;
+    height: 148px;
+    background: #F8F3F4;
+    align-items: center;
 }
 
 .item-list {
@@ -520,25 +524,170 @@ a {
     margin-bottom: 64px;
 }
 
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter {
+    padding-top: 39px;
+    padding-bottom: 65px;
+    display: flex;
+
+}
+.filter__group {
+    position: relative;
+    height: 48px;
+    width: 360px;
+    padding-right: 30px;
+}
+.filter__main[open] {
+    -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    border: 1px solid #EBEBEB;
+}
+
+.filter__main {
+    padding: 13px 16px 16px;
+    width: 360px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+
+}
+
+.filter__main[open] .filter__name {
+    color: #F16D7F;
+}
+
+.filter__main[open] svg path {
+    fill: #F16D7F;
+}
+
+.filter__name {
+    outline: none;
+    cursor: pointer;
+}
+
 .filter__sort {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    margin-top: 51px;
-    margin-bottom: 64px;
+    margin-top: 16px;
 }
 
-.filter {
+.filter__sort[open] .filter__category {
+    color: #F16D7F;
+}
+.filter__category {
+    border-left: 5px solid #F16D7F;
+    outline: none;
+}
+.filter__category-name {
+    display: block;
+    line-height: 37px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-left: 11px;
+    cursor: pointer;
+}
+
+.filter__content {
+    list-style-type: none;
+    padding-left: 19px;
+    margin-top: 24px;
+}
+
+.filter__content-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-bottom: 11px;
+    display: block;
+}
+
+.filter__content-link:hover {
+    color: #F16D7F;
+}
+
+.param {
     display: flex;
-    justify-content: flex-start;
     gap: 30px;
 }
+.param__box {
+    position: absolute;
+    background: #fff;
+    width: 79px;
+    z-index: 1;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
-.sort {
-    display: flex;
+}
+.param_heading {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    cursor: pointer;
+    outline: none;
 }
 
-.product__content {
-    width: 724px;
-    height: 597px;
+.choice {
+    display: none;
 }
+.item {
+    padding-left: 9px;
+    padding-bottom: 9px;
+}
+.item:first-child{
+    padding-top: 7px;
+
+}
+
+.item:last-child{
+
+}
+  .item__text:before {
+    border: 1px solid #EBEBEB;
+    content: " ";
+    color: #6F6E6E;
+    display: inline-block;
+    font: 14px/13px Arial;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 12px;
+    height: 12px;
+    background: #FFF;
+    border-image: initial;
+    vertical-align: middle;
+}
+.item__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+}
+.choice:checked + label:before {
+    content: "\2714";
+}
+/* disabled */
+.choice:disabled + .item__text:before {
+    background: #eee;
+    color: #aaa;
+}
+
+
+.param__details {
+    align-self: center;
+    position: relative;
+
+}
+.arrow {
+    padding-left: 10px;
+}
+
+
+/*Страница продукта*/
+
