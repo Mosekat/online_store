@@ -717,8 +717,8 @@ summary::-webkit-details-marker {
     justify-content: space-between;
     background: #F7F7F7;
     align-items: center;
-    position: relative;
-    z-index: 1;
+
+
     border: 1px solid #EAEAEA;
 }
 
@@ -884,14 +884,21 @@ summary::-webkit-details-marker {
 
 .shopping__name {
 
-    padding-left: 31px;
-    padding-top: 22px;
 }
 
 .shopping__block {
     padding-bottom: 42px;
 }
-
+ .shopping__box {
+     justify-content: space-between;
+     display: inline-flex;
+     flex-direction: row;
+     flex-grow: 1;
+     padding-left: 31px;
+     padding-top: 22px;
+     padding-right: 22px;
+     align-items: flex-start;
+ }
 .shopping__title {
     font-size: 24px;
     line-height: 29px;
@@ -924,15 +931,14 @@ summary::-webkit-details-marker {
     margin-bottom: 128px;
 }
 
-.cross {
-    margin-top: 28px;
-    margin-left: 140px;
-
-
+.cross:hover .cross__svg path {
+    fill: #F16D7F;
 }
+
 .shoping__registration {
 
 }
+
 .shopping__form {
     list-style-type: none;
 }
@@ -968,17 +974,21 @@ summary::-webkit-details-marker {
     padding-left: 17px;
     color: #222222;
 }
+
 .input-text {
     color: #B1B1B1;
 }
+
 input[type="text"]::placeholder {
     color: #222222;
 }
+
 .shopping__quantity {
     padding: 2px 16px 2px 16px;
     margin-left: 25px;
     border: 1px solid #EAEAEA;
 }
+
 .shopping__button {
     margin-top: 24px;
     padding: 11px 15px;
@@ -995,6 +1005,7 @@ input[type="text"]::placeholder {
     background: #A4A4A4;
     color: #ffffff;
 }
+
 .shopping__price {
     display: flex;
     flex-direction: column;
@@ -1017,9 +1028,9 @@ input[type="text"]::placeholder {
     font-size: 11px;
     line-height: 13px;
     color: #4A4A4A;
-padding-left: 33px;
-
+    padding-left: 33px;
 }
+
 .text__grand {
     font-weight: 300;
     font-size: 16px;
@@ -1044,4 +1055,10 @@ padding-left: 33px;
 .svg__line {
     align-self: center;
     margin-top: 21px;
+}
+
+/*Страница регистрации*/
+
+.registration {
+    display: flex;
 }
