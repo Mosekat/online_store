@@ -984,9 +984,14 @@ input[type="text"]::placeholder {
 }
 
 .shopping__quantity {
-    padding: 2px 16px 2px 16px;
+
     margin-left: 25px;
     border: 1px solid #EAEAEA;
+    font-size: 18px;
+    line-height: 22px;
+    width: 44px;
+    text-align: center;
+    color: #656565;
 }
 
 .shopping__button {
@@ -1038,6 +1043,7 @@ input[type="text"]::placeholder {
     color: #222222;
     margin-top: 12px;
 }
+
 .button__checkout {
     background: #F16D7F;
     font-weight: 300;
