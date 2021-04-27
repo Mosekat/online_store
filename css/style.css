@@ -1,3 +1,4 @@
+@import url("m768.css");
 * {
     margin: 0;
     padding: 0;
@@ -182,7 +183,11 @@ a {
     width: 360px;
     background: #F8F8F8;
     position: relative;
+    transition: transform .4s;
+}
 
+.product:hover {
+    transform: scale(1.03);
 }
 
 .product:hover .product__add {
@@ -234,6 +239,7 @@ a {
     position: absolute;
     top: 188px;
     left: 111px;
+    transition: all .3s;
 }
 
 .product__add:hover {
@@ -262,6 +268,7 @@ a {
     padding: 14px 38px;
     margin-top: 48px;
     margin-bottom: 95px;
+    transition: all .3s;
 }
 
 .button:hover {
@@ -323,7 +330,7 @@ a {
     display: flex;
     height: 448px;
     background: url("./../img/blackout.png"), url("./../img/fon.jpg") no-repeat center;
-
+    background-size: cover;
 }
 
 .footer__text {
@@ -398,6 +405,7 @@ a {
     width: 226px;
     height: 49px;
     padding-left: 30px;
+    padding-right: 30px;
     background: #E1E1E1;
 }
 
@@ -424,7 +432,6 @@ a {
 
 .icon:hover .white {
     fill: #F16D7F;
-
 }
 
 .bottom {
@@ -536,7 +543,6 @@ summary::-webkit-details-marker {
     padding-top: 39px;
     padding-bottom: 65px;
     display: flex;
-
 }
 
 .filter__group {
@@ -559,7 +565,6 @@ summary::-webkit-details-marker {
     position: absolute;
     background-color: #fff;
     z-index: 2;
-
 }
 
 .filter__main[open] .filter__name {
@@ -653,10 +658,6 @@ summary::-webkit-details-marker {
 
 }
 
-.item:last-child {
-
-}
-
 .item__text:before {
     border: 1px solid #EBEBEB;
     content: " ";
@@ -690,17 +691,14 @@ summary::-webkit-details-marker {
     color: #aaa;
 }
 
-
 .param__details {
     align-self: center;
     position: relative;
-
 }
 
 .arrow {
     padding-left: 10px;
 }
-
 
 /*Страница продукта*/
 .product-box-product {
@@ -844,7 +842,9 @@ summary::-webkit-details-marker {
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: all .3s;
 }
+
 .add__cart:hover .svg__cart path {
     fill: #ffffff;
 }
@@ -863,8 +863,8 @@ summary::-webkit-details-marker {
 .shopping {
     display: flex;
     margin-top: 69px;
-    gap: 108px;
-    flex-wrap: wrap;
+    gap: 128px;
+    justify-content: space-between;
 }
 
 .shopping__product {
@@ -875,30 +875,26 @@ summary::-webkit-details-marker {
 }
 
 .shopping__element {
-    width: 652px;
     display: flex;
     background: #FFFFFF;
     box-shadow: 17px 20px 20px rgb(0 0 0 / 6%);
-
-}
-
-.shopping__name {
-
 }
 
 .shopping__block {
     padding-bottom: 42px;
 }
- .shopping__box {
-     justify-content: space-between;
-     display: inline-flex;
-     flex-direction: row;
-     flex-grow: 1;
-     padding-left: 31px;
-     padding-top: 22px;
-     padding-right: 22px;
-     align-items: flex-start;
- }
+
+.shopping__box {
+    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding-left: 31px;
+    padding-top: 22px;
+    padding-right: 22px;
+    align-items: flex-start;
+}
+
 .shopping__title {
     font-size: 24px;
     line-height: 29px;
@@ -909,7 +905,7 @@ summary::-webkit-details-marker {
     list-style-type: none;
 }
 
-.shopping__dollar  {
+.shopping__dollar {
 
     color: #F16D7F;
     font-size: 22px;
@@ -951,6 +947,7 @@ summary::-webkit-details-marker {
     line-height: 17px;
     color: #000000;
     padding: 17px 40px;
+    transition: all .3s;
 }
 
 .shopping__cart:hover {
@@ -965,21 +962,22 @@ summary::-webkit-details-marker {
     color: #222222;
 }
 
-.input-text {
+.input__text__registration {
     width: 360px;
     border: 1px solid #A4A4A4;
     margin-top: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 17px;
-    color: #222222;
-}
-
-.input-text {
+    padding-right: 17px;
     color: #B1B1B1;
 }
 
-input[type="text"]::placeholder {
+.placeholder_grey::placeholder {
+    color: #B1B1B1;
+}
+
+.placeholder_black::placeholder {
     color: #222222;
 }
 
@@ -1004,6 +1002,7 @@ input[type="text"]::placeholder {
     line-height: 13px;
     color: #4A4A4A;
     margin-bottom: 58px;
+    transition: all .3s;
 }
 
 .shopping__button:hover {
@@ -1053,11 +1052,15 @@ input[type="text"]::placeholder {
     padding: 15px 42px;
     align-self: center;
     margin-top: 17px;
+    border: 1px solid #F16D7F;
+    transition: all .3s;
 }
+
 .button__checkout:hover {
     background: #ffffff;
     color: #F16D7F;
 }
+
 .svg__line {
     align-self: center;
     margin-top: 21px;
@@ -1067,4 +1070,135 @@ input[type="text"]::placeholder {
 
 .registration {
     display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    column-gap: 128px;
 }
+
+.registration__form {
+    list-style-type: none;
+}
+
+.registration__input__name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.registration__text__p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 16px;
+}
+
+.registration__heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.registration__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    list-style-type: none;
+}
+
+.registration__text_position {
+    margin-top: 22px;
+    margin-bottom: 21px;
+}
+
+.registration__text_list {
+    padding-bottom: 16px;
+
+}
+
+.registration__svg {
+    padding-right: 23px;
+}
+
+.custom__radio__btn {
+    position: relative; /* Родительский элемент*/
+    display: inline-block; /* Для применения рамок, размеров*/
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    border: 1px solid #A4A4A4; /* Толщина, стиль, цвет рамки*/
+    border-radius: 50%; /* Получение круга*/
+    vertical-align: text-top; /* Выравнивание кнопки по центру*/
+    margin-right: 10px; /* Отступ между кнопкой и меткой*/
+}
+
+.custom__radio__btn::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #F16D7F;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+
+.real__radio__btn:checked + .custom__radio__btn::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real__radio__btn {
+    /* Скрываем реальную радио кнопку*/
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.radio__text {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    padding-right: 20px;
+}
+
+.radio__button {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.registration__button {
+    background: #F16D7F;
+    border: 1px solid #F16D7F;
+    padding: 15px 28px;
+    margin-top: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+.vector {
+    padding-left: 20px;
+}
+
+.registration__button:hover {
+    background: #ffffff;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+}
+
+.registration__button:hover .vector path {
+    fill: #F16D7F;
+}
+
