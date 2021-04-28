@@ -1,6 +1,0 @@
-@media (max-width: 1023px) {
-   .center {
-       padding-left: calc( 50% - 368px );
-       padding-right: calc( 50% - 368px );
-   }
-}
