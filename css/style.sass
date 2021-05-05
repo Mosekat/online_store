@@ -17,6 +17,15 @@ a
 ul
   list-style-type: none
 
+/*Прижатие подвала к нижней части экрана*/
+.wrapper
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+.top
+  flex-grow: 1
+
 .center 
   padding-left: calc(50% - 570px)
   padding-right: calc(50% - 570px)
@@ -312,7 +321,6 @@ ul
   margin-bottom: 95px
   transition: all .3s
 
-
 .button:hover 
   background: #F16D7F
   color: #FFFFFF
@@ -320,7 +328,6 @@ ul
 
 .footer 
   background: #222224
-
 
 .condition__title 
   font-weight: 400
@@ -425,8 +432,7 @@ ul
   margin-top: 32px
 
 
-.sendbutton 
-
+.sendbutton
   height: 49px
   background: #F16D7F
   font-size: 14px
@@ -436,6 +442,12 @@ ul
   border-radius: 0 25px 25px 0
   border: unset
   padding: 15px
+  transition: all 0.3s
+
+.sendbutton:hover
+  background-color: #ffffff
+  border-color: $colorSelect
+  color: $colorSelect
 
 
 .input__text 
@@ -468,6 +480,8 @@ ul
   margin-top: 30px
   margin-bottom: 30px
 
+.icon path
+  transition: all 0.3s
 
 .icon:hover .black 
   fill: #FFFFFF
@@ -716,7 +730,6 @@ summary::-webkit-details-marker
   background: #FFF
   border-image: initial
   vertical-align: middle
-
 
 .item__text 
   font-size: 14px

@@ -20,6 +20,17 @@ ul {
   list-style-type: none;
 }
 
+/*Прижатие подвала к нижней части экрана*/
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  flex-grow: 1;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -442,6 +453,13 @@ ul {
   border-radius: 0 25px 25px 0;
   border: unset;
   padding: 15px;
+  transition: all 0.3s;
+}
+
+.sendbutton:hover {
+  background-color: #ffffff;
+  border-color: #F16D7F;
+  color: #F16D7F;
 }
 
 .input__text {
@@ -473,6 +491,10 @@ ul {
 .icon {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.icon path {
+  transition: all 0.3s;
 }
 
 .icon:hover .black {

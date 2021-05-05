@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\css\style.sass">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\index.html">
           <value>
             <Attribute>
