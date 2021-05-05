@@ -453,13 +453,6 @@ ul {
   border-radius: 0 25px 25px 0;
   border: unset;
   padding: 15px;
-  transition: all 0.3s;
-}
-
-.sendbutton:hover {
-  background-color: #ffffff;
-  border-color: #F16D7F;
-  color: #F16D7F;
 }
 
 .input__text {
