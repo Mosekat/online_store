@@ -5,13 +5,13 @@ $colorSelect: #F16D7F
   padding: 0
 
 
-body 
+body
   font-family: 'Lato', sans-serif
 
 input
   outline: none
 
-a 
+a
   text-decoration: none
 
 ul
@@ -26,17 +26,17 @@ ul
 .top
   flex-grow: 1
 
-.center 
+.center
   padding-left: calc(50% - 570px)
   padding-right: calc(50% - 570px)
 
 
-.container 
+.container
   max-width: 1140px
   margin: auto
 
 
-.header 
+.header
   background: #222222
   height: $heightHeader
   display: flex
@@ -45,20 +45,19 @@ ul
   position: relative
 
 
-
-.header__search 
+.header__search
   margin-left: 41px
 
 
-.header__right 
+.header__right
   display: flex
   column-gap: 33px
   align-items: center
 
 .header__links
-    display: flex
-    gap: 31px
-    align-items: center
+  display: flex
+  gap: 31px
+  align-items: center
 
 .header__links_mob
   display: none
@@ -114,65 +113,97 @@ ul
     margin-right: 33px
  */
 
-.promo 
+.cartIconWrap span
+  display: none
+  width: 19px
+  height: 19px
+  color: white
+  background: #f16d7f
+  border-radius: 50%
+  position: absolute
+  text-align: center
+  right: -8px
+  top: -5px
+  font-size: 12px
+  line-height: 19px
+
+.cartIconWrap
+  position: relative
+
+table
+  display: flex
+  background: white
+  color: #222222
+  font-size: 12px
+  line-height: 19px
+  border: 1px solid black
+
+.hide
+  display: none
+
+.show
+  display: block
+
+
+
+.promo
   background: #F1E4E6
   display: flex
   padding-left: calc(50% - 800px)
   padding-right: calc(50% - 800px)
 
 
-.promo__left 
+.promo__left
   width: 50%
 
 
-.promo__right 
+.promo__right
   width: 50%
 
 
-.promo__img 
+.promo__img
   width: 100%
 
 
-.promo__content 
+.promo__content
   margin-top: 30%
   border-left: 12px solid #F16D7F
   padding-left: 16px
 
 
-.promo__text 
+.promo__text
   color: #F16D7F
 
 
-.promo__h1 
+.promo__h1
   font-weight: 900
   font-size: 48px
   line-height: 58px
   color: #222222
 
 
-.promo__heading 
+.promo__heading
   font-weight: bold
   font-size: 32px
   line-height: 38px
 
 
-.sale 
+.sale
   padding-top: 64px
   padding-bottom: 96px
 
 
-.sale__box 
+.sale__box
   display: flex
   margin-bottom: 30px
 
 
-
-.sale__item 
+.sale__item
   display: flex
   position: relative
 
 
-.sale__content 
+.sale__content
   position: absolute
   top: 0
   left: 0
@@ -184,14 +215,14 @@ ul
   align-items: center
 
 
-.sale__text 
+.sale__text
   font-size: 16px
   line-height: 19px
   text-align: center
   color: #FFFFFF
 
 
-.sale__heading 
+.sale__heading
   font-weight: bold
   font-size: 24px
   line-height: 29px
@@ -199,23 +230,22 @@ ul
   color: #F16D7F
 
 
-.sale__img 
+.sale__img
   width: 100%
 
 
-.sale__item:not(:last-child) 
+.sale__item:not(:last-child)
   margin-right: 30px
 
 
-.catalog__name 
+.catalog__name
   font-size: 30px
   line-height: 36px
   color: #222222
   text-align: center
 
 
-
-.fetured-items__text 
+.fetured-items__text
   font-size: 14px
   line-height: 17px
   color: #9F9F9F
@@ -223,44 +253,44 @@ ul
   margin-bottom: 48px
 
 
-.product-box 
+.product-box
   display: flex
   gap: 30px
   flex-wrap: wrap
   justify-content: center
 
 
-.product 
+.product
   width: 360px
   background: #F8F8F8
   position: relative
   transition: transform .4s
 
 
-.product:hover 
+.product:hover
   transform: scale(1.03)
 
 
-.product:hover .product__add 
+.product:hover .product__add
   display: flex
 
 
-.product:hover .product__img 
+.product:hover .product__img
   filter: brightness(50%)
 
 
-.product__content 
+.product__content
   padding: 24px 16px 20px
 
 
-.product__name 
+.product__name
   font-weight: 600
   font-size: 13px
   line-height: 16px
   color: #000000
 
 
-.product__text 
+.product__text
   font-weight: 300
   font-size: 14px
   line-height: 17px
@@ -268,7 +298,7 @@ ul
   padding-top: 12px
 
 
-.product__price 
+.product__price
   font-size: 16px
   line-height: 19px
   color: #F16D7F
@@ -276,7 +306,7 @@ ul
   padding-bottom: 20px
 
 
-.product__add 
+.product__add
   display: none
   justify-content: center
   align-items: center
@@ -293,25 +323,25 @@ ul
   transition: all .3s
 
 
-.product__add:hover 
+.product__add:hover
   color: black
   background-color: #fff
 
 
-.product__add:hover .product__cart path 
+.product__add:hover .product__cart path
   fill: black
 
 
-.product__cart 
+.product__cart
   margin-right: 11px
 
 
-.top__button 
+.top__button
   display: flex
   justify-content: center
 
 
-.button 
+.button
   font-size: 16px
   line-height: 19px
   color: #F26376
@@ -321,15 +351,15 @@ ul
   margin-bottom: 95px
   transition: all .3s
 
-.button:hover 
+.button:hover
   background: #F16D7F
   color: #FFFFFF
 
 
-.footer 
+.footer
   background: #222224
 
-.condition__title 
+.condition__title
   font-weight: 400
   font-size: 20px
   line-height: 24px
@@ -339,7 +369,7 @@ ul
   margin-bottom: 16px
 
 
-.condition__text 
+.condition__text
   font-weight: 300
   font-size: 14px
   line-height: 17px
@@ -347,13 +377,12 @@ ul
   color: #FBFBFB
 
 
-.footer__box 
+.footer__box
   display: flex
   column-gap: 80px
 
 
-
-.condition 
+.condition
   display: flex
   flex-direction: column
   padding-top: 103px
@@ -361,29 +390,29 @@ ul
   align-items: center
 
 
-.car 
+.car
   width: 45px
   height: 32px
 
 
-.persent 
+.persent
   width: 35px
   height: 35px
 
 
-.crown 
+.crown
   width: 47px
   height: 34px
 
 
-.footer__top 
+.footer__top
   display: flex
   min-height: 448px
   background: url("./../img/blackout.png"), url("./../img/fon.jpg") no-repeat center
   background-size: cover
 
 
-.footer__text 
+.footer__text
   font-weight: 400
   font-size: 20px
   line-height: 24px
@@ -395,12 +424,12 @@ ul
   display: flex
 
 
-.footer__content 
+.footer__content
   width: 50%
   align-self: center
 
 
-.footer__img 
+.footer__img
   width: 96px
   height: 96px
   display: block
@@ -409,7 +438,7 @@ ul
   margin-bottom: 15px
 
 
-.link 
+.link
   font-weight: 400
   font-size: 18px
   line-height: 29px
@@ -417,16 +446,14 @@ ul
   color: #222224
 
 
-
-
-.black 
+.black
   display: block
   font-weight: 700
   font-size: 24px
   align-self: center
 
 
-.write__form 
+.write__form
   display: flex
   justify-content: center
   margin-top: 32px
@@ -443,7 +470,7 @@ ul
   border: unset
   padding: 15px
 
-.input__text 
+.input__text
   font-size: 14px
   line-height: 17px
   display: flex
@@ -457,11 +484,11 @@ ul
   background: #E1E1E1
 
 
-.footer__bottom 
+.footer__bottom
   background: #222224
 
 
-.copyright 
+.copyright
   font-size: 16px
   line-height: 19px
   color: #FBFBFB
@@ -469,27 +496,27 @@ ul
   margin-bottom: 30px
 
 
-.icon 
+.icon
   margin-top: 30px
   margin-bottom: 30px
 
 .icon path
   transition: all 0.3s
 
-.icon:hover .black 
+.icon:hover .black
   fill: #FFFFFF
 
 
-.icon:hover .white 
+.icon:hover .white
   fill: #F16D7F
 
 
-.bottom 
+.bottom
   display: flex
   justify-content: space-between
 
 
-.heading__text 
+.heading__text
   font-size: 24px
   line-height: 29px
   color: #F16D7F
@@ -499,40 +526,40 @@ ul
 
 /*Хлебные крошки*/
 
-.breadcrumb 
+.breadcrumb
   list-style: none
 
 
-.crumb 
+.crumb
   display: inline
   font-size: 17px
 
 
-.crumb:not(:first-child):before 
+.crumb:not(:first-child):before
   padding: 8px
   color: #636363
   content: "/"
 
 
-.path 
+.path
   font-weight: 300
   font-size: 14px
   line-height: 17px
   color: #636363
 
 
-.path:hover 
+.path:hover
   color: #F16D7F
 
 
-.crumb:last-child .path 
+.crumb:last-child .path
   font-weight: bold
   font-size: 14px
   line-height: 17px
   color: #F16D7F
 
 
-.top__heading 
+.top__heading
   display: flex
   justify-content: space-between
   height: 148px
@@ -540,25 +567,25 @@ ul
   align-items: center
 
 
-.item-list 
+.item-list
   height: 43px
 
 
-.page 
+.page
   list-style-type: none
   display: flex
   border: 1px solid #EBEBEB
   padding: 12px
 
 
-.pagination 
+.pagination
   display: flex
   justify-content: center
   margin-top: 48px
   margin-bottom: 96px
 
 
-.number 
+.number
   padding: 8px
   text-decoration: none
   font-weight: 300
@@ -567,11 +594,11 @@ ul
   color: #B1B1B1
 
 
-.number:hover 
+.number:hover
   color: #F16D7F
 
 
-.filter__text 
+.filter__text
   font-weight: 600
   font-size: 14px
   line-height: 17px
@@ -581,34 +608,34 @@ ul
   margin-bottom: 64px
 
 
-summary 
+summary
   display: block
 
 
-summary::-webkit-details-marker 
+summary::-webkit-details-marker
   display: none
 
 
-.filter 
+.filter
   padding-top: 39px
   padding-bottom: 65px
   display: flex
 
 
-.filter__group 
+.filter__group
   position: relative
   height: 48px
   width: 360px
   padding-right: 30px
 
 
-.filter__main[open] 
+.filter__main[open]
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
   border: 1px solid #EBEBEB
 
 
-.filter__main 
+.filter__main
   padding: 13px 16px 16px
   width: 360px
   box-sizing: border-box
@@ -617,36 +644,36 @@ summary::-webkit-details-marker
   z-index: 1
 
 
-.filter__main[open] .filter__name 
+.filter__main[open] .filter__name
   color: #F16D7F
 
 
-.filter__main[open] svg path 
+.filter__main[open] svg path
   fill: #F16D7F
 
 
-.filter__name 
+.filter__name
   outline: none
   cursor: pointer
 
 
-.filter__sort 
+.filter__sort
   font-size: 14px
   line-height: 17px
   color: #6F6E6E
   margin-top: 16px
 
 
-.filter__sort[open] .filter__category 
+.filter__sort[open] .filter__category
   color: #F16D7F
 
 
-.filter__category 
+.filter__category
   border-left: 5px solid #F16D7F
   outline: none
 
 
-.filter__category-name 
+.filter__category-name
   display: block
   line-height: 37px
   border-bottom: 1px solid #EBEBEB
@@ -654,13 +681,13 @@ summary::-webkit-details-marker
   cursor: pointer
 
 
-.filter__content 
+.filter__content
   list-style-type: none
   padding-left: 19px
   margin-top: 24px
 
 
-.filter__content-link 
+.filter__content-link
   font-size: 14px
   line-height: 17px
   color: #6F6E6E
@@ -668,16 +695,16 @@ summary::-webkit-details-marker
   display: block
 
 
-.filter__content-link:hover 
+.filter__content-link:hover
   color: #F16D7F
 
 
-.param 
+.param
   display: flex
   gap: 30px
 
 
-.param__box 
+.param__box
   position: absolute
   background: #fff
   width: 79px
@@ -685,8 +712,7 @@ summary::-webkit-details-marker
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
 
-
-.param_heading 
+.param_heading
   font-size: 14px
   line-height: 17px
   color: #6F6E6E
@@ -694,21 +720,20 @@ summary::-webkit-details-marker
   outline: none
 
 
-.choice 
+.choice
   display: none
 
 
-.item 
+.item
   padding-left: 9px
   padding-bottom: 9px
 
 
-.item:first-child 
+.item:first-child
   padding-top: 7px
 
 
-
-.item__text:before 
+.item__text:before
   border: 1px solid #EBEBEB
   content: " "
   color: #6F6E6E
@@ -724,33 +749,33 @@ summary::-webkit-details-marker
   border-image: initial
   vertical-align: middle
 
-.item__text 
+.item__text
   font-size: 14px
   line-height: 16px
   color: #6F6E6E
 
 
-.choice:checked + label:before 
+.choice:checked + label:before
   content: "\2714"
 
 
 /* disabled */
-.choice:disabled + .item__text:before 
+.choice:disabled + .item__text:before
   background: #eee
   color: #aaa
 
 
-.param__details 
+.param__details
   align-self: center
   position: relative
 
 
-.arrow 
+.arrow
   padding-left: 10px
 
 
 /*Страница продукта*/
-.product-box-product 
+.product-box-product
   display: flex
   gap: 30px
   flex-wrap: wrap
@@ -759,7 +784,7 @@ summary::-webkit-details-marker
   margin-top: 129px
 
 
-.product__show 
+.product__show
   display: flex
   justify-content: space-between
   background: #F7F7F7
@@ -769,14 +794,14 @@ summary::-webkit-details-marker
   border: 1px solid #EAEAEA
 
 
-.product__photo 
+.product__photo
   padding-top: 10px
   padding-bottom: 42px
 
 .product__photo_scale
   width: 100%
 
-.description 
+.description
   padding-bottom: 65px
   flex-direction: column
   display: flex
@@ -789,7 +814,7 @@ summary::-webkit-details-marker
   border: 1px solid #EAEAEA
 
 
-.description__collection 
+.description__collection
   justify-content: center
   display: flex
   flex-direction: column
@@ -797,14 +822,14 @@ summary::-webkit-details-marker
   padding-top: 65px
 
 
-.element 
+.element
   width: 47px
   height: 47px
   background: rgba(42, 42, 42, 0.15)
   display: flex
   justify-content: center
 
-.content__svg 
+.content__svg
   align-self: center
 
 
@@ -815,7 +840,7 @@ summary::-webkit-details-marker
   fill: #F16D7F
 
 
-.collection 
+.collection
   font-weight: 300
   font-size: 14px
   line-height: 17px
@@ -824,7 +849,7 @@ summary::-webkit-details-marker
   padding-bottom: 12px
 
 
-.collection__mark 
+.collection__mark
   font-weight: 300
   font-size: 18px
   line-height: 22px
@@ -833,7 +858,7 @@ summary::-webkit-details-marker
   padding-top: 12px
 
 
-.collection__text 
+.collection__text
   font-weight: 300
   font-size: 14px
   line-height: 17px
@@ -845,7 +870,7 @@ summary::-webkit-details-marker
   align-self: center
 
 
-.collection_price 
+.collection_price
   font-weight: 300
   font-size: 24px
   line-height: 29px
@@ -854,37 +879,36 @@ summary::-webkit-details-marker
   margin-bottom: 65px
 
 
-.choose 
+.choose
   display: flex
   padding-top: 65px
   padding-bottom: 64px
   gap: 23px
 
 
-.choose__heading 
+.choose__heading
   font-size: 14px
   line-height: 17px
   color: #6F6E6E
 
 
-.choose__param 
+.choose__param
   align-self: center
   position: relative
 
 
-
-.choose__svg 
+.choose__svg
   margin-left: 9px
 
 
-.svg__cart 
+.svg__cart
   margin-right: 23px
   margin-left: 23px
   margin-top: 15px
   margin-bottom: 8px
 
 
-.add__cart 
+.add__cart
   font-size: 16px
   line-height: 19px
   color: #F26376
@@ -896,47 +920,47 @@ summary::-webkit-details-marker
   transition: all .3s
 
 
-.add__cart:hover .svg__cart path 
+.add__cart:hover .svg__cart path
   fill: #ffffff
 
 
-.add__cart:hover 
+.add__cart:hover
   background: #F16D7F
   color: #ffffff
 
 
-.collection__line 
+.collection__line
   align-self: center
   width: 100%
 
 
 /*Страница корзины*/
 
-.shopping 
+.shopping
   display: flex
   margin-top: 69px
   gap: 128px
   justify-content: space-between
 
 
-.shopping__product 
+.shopping__product
   display: flex
   flex-direction: column
   gap: 40px
   width: 55%
 
 
-.shopping__element 
+.shopping__element
   display: flex
   background: #FFFFFF
   box-shadow: 17px 20px 20px rgb(0 0 0 / 6%)
 
 
-.shopping__block 
+.shopping__block
   padding-bottom: 42px
 
 
-.shopping__box 
+.shopping__box
   justify-content: space-between
   display: inline-flex
   flex-direction: row
@@ -947,18 +971,19 @@ summary::-webkit-details-marker
   align-items: flex-start
 
 
-.shopping__title 
+.shopping__title
   font-size: 24px
   line-height: 29px
   color: #222222
 
 .shopping__registration
   width: auto
-.shopping__parametr 
+
+.shopping__parametr
   list-style-type: none
 
 
-.shopping__dollar 
+.shopping__dollar
   font-weight: 700
   color: #F16D7F
   font-size: 22px
@@ -966,13 +991,13 @@ summary::-webkit-details-marker
   padding-left: 20px
 
 
-.shopping__li 
+.shopping__li
   margin-bottom: 6px
   font-size: 22px
   line-height: 26px
   color: #575757
 
-.shopping__buttons 
+.shopping__buttons
   display: flex
   justify-content: space-between
   margin-top: 32px
@@ -981,13 +1006,13 @@ summary::-webkit-details-marker
 .cross .cross__svg path
   transition: all 0.3s
 
-.cross:hover .cross__svg path 
+.cross:hover .cross__svg path
   fill: #F16D7F
 
-.shopping__form 
+.shopping__form
   list-style-type: none
 
-.shopping__cart 
+.shopping__cart
   border: 1px solid #A4A4A4
   background: #FFFFFF
   font-weight: 300
@@ -999,19 +1024,19 @@ summary::-webkit-details-marker
   transition: all .3s
 
 
-.shopping__cart:hover 
+.shopping__cart:hover
   background: #A4A4A4
   color: #ffffff
 
 
-.shopping__adress 
+.shopping__adress
   font-weight: 300
   font-size: 16px
   line-height: 19px
   color: #222222
 
 
-.input__text__registration 
+.input__text__registration
   width: 360px
   border: 1px solid #A4A4A4
   box-sizing: content-box
@@ -1023,15 +1048,15 @@ summary::-webkit-details-marker
   color: #B1B1B1
 
 
-.placeholder_grey::placeholder 
+.placeholder_grey::placeholder
   color: #B1B1B1
 
 
-.placeholder_black::placeholder 
+.placeholder_black::placeholder
   color: #222222
 
 
-.shopping__quantity 
+.shopping__quantity
 
   margin-left: 25px
   border: 1px solid #EAEAEA
@@ -1042,7 +1067,7 @@ summary::-webkit-details-marker
   color: #656565
 
 
-.shopping__button 
+.shopping__button
   margin-top: 24px
   padding: 11px 15px
   background: #FFFFFF
@@ -1055,12 +1080,12 @@ summary::-webkit-details-marker
   transition: all .3s
 
 
-.shopping__button:hover 
+.shopping__button:hover
   background: #A4A4A4
   color: #ffffff
 
 
-.shopping__price 
+.shopping__price
   display: flex
   flex-direction: column
   background: #F5F3F3
@@ -1071,13 +1096,13 @@ summary::-webkit-details-marker
   padding-left: 44px
 
 
-.text__total 
+.text__total
   font-size: 11px
   line-height: 13px
   color: #4A4A4A
 
 
-.text__dollar 
+.text__dollar
 
   font-size: 11px
   line-height: 13px
@@ -1085,7 +1110,7 @@ summary::-webkit-details-marker
   padding-left: 33px
 
 
-.text__grand 
+.text__grand
   font-weight: 300
   font-size: 16px
   line-height: 19px
@@ -1093,7 +1118,7 @@ summary::-webkit-details-marker
   margin-top: 12px
 
 
-.button__checkout 
+.button__checkout
   background: #F16D7F
   font-weight: 300
   font-size: 16px
@@ -1106,37 +1131,37 @@ summary::-webkit-details-marker
   transition: all .3s
 
 
-.button__checkout:hover 
+.button__checkout:hover
   background: #ffffff
   color: #F16D7F
 
 
-.svg__line 
+.svg__line
   align-self: center
   margin-top: 21px
 
 
 /*Страница регистрации*/
 
-.registration 
+.registration
   display: flex
   padding-top: 64px
   padding-bottom: 96px
   column-gap: 128px
 
 
-.registration__form 
+.registration__form
   list-style-type: none
 
 
-.registration__input__name 
+.registration__input__name
   font-weight: 300
   font-size: 16px
   line-height: 19px
   color: #222222
 
 
-.registration__text__p 
+.registration__text__p
   font-weight: 300
   font-size: 13px
   line-height: 16px
@@ -1144,14 +1169,14 @@ summary::-webkit-details-marker
   margin-top: 16px
 
 
-.registration__heading 
+.registration__heading
   font-weight: 300
   font-size: 24px
   line-height: 29px
   color: #000000
 
 
-.registration__text 
+.registration__text
   font-weight: 300
   font-size: 24px
   line-height: 29px
@@ -1159,33 +1184,38 @@ summary::-webkit-details-marker
   list-style-type: none
 
 
-.registration__text_position 
+.registration__text_position
   margin-top: 22px
   margin-bottom: 21px
 
 
-.registration__text_list 
+.registration__text_list
   padding-bottom: 16px
 
 
-
-.registration__svg 
+.registration__svg
   padding-right: 23px
 
 
-.custom__radio__btn 
-  position: relative /* Родительский элемент*/
-  display: inline-block /* Для применения рамок, размеров*/
+.custom__radio__btn
+  position: relative
+  /* Родительский элемент*/
+  display: inline-block
+  /* Для применения рамок, размеров*/
   width: 17px
   height: 17px
   background: #fff
-  border: 1px solid #A4A4A4 /* Толщина, стиль, цвет рамки*/
-  border-radius: 50% /* Получение круга*/
-  vertical-align: text-top /* Выравнивание кнопки по центру*/
-  margin-right: 10px /* Отступ между кнопкой и меткой*/
+  border: 1px solid #A4A4A4
+  /* Толщина, стиль, цвет рамки*/
+  border-radius: 50%
+  /* Получение круга*/
+  vertical-align: text-top
+  /* Выравнивание кнопки по центру*/
+  margin-right: 10px
+/* Отступ между кнопкой и меткой*/
 
 
-.custom__radio__btn::before 
+.custom__radio__btn::before
   content: ''
   display: inline-block
   width: 12px
@@ -1199,11 +1229,11 @@ summary::-webkit-details-marker
   transition: 0.2s ease-in
 
 
-.real__radio__btn:checked + .custom__radio__btn::before 
+.real__radio__btn:checked + .custom__radio__btn::before
   transform: translate(-50%, -50%) scale(1)
 
 
-.real__radio__btn 
+.real__radio__btn
   /* Скрываем реальную радио кнопку*/
   width: 0
   height: 0
@@ -1212,7 +1242,7 @@ summary::-webkit-details-marker
   z-index: -1
 
 
-.radio__text 
+.radio__text
   font-weight: 300
   font-size: 11px
   line-height: 13px
@@ -1220,12 +1250,12 @@ summary::-webkit-details-marker
   padding-right: 20px
 
 
-.radio__button 
+.radio__button
   padding-top: 32px
   padding-bottom: 32px
 
 
-.registration__button 
+.registration__button
   background: #F16D7F
   border: 1px solid #F16D7F
   padding: 15px 28px
@@ -1238,18 +1268,56 @@ summary::-webkit-details-marker
   transition: .3s
 
 
-.vector 
+.vector
   padding-left: 20px
 
 
-.registration__button:hover 
+.registration__button:hover
   background: #ffffff
   color: #F16D7F
   border: 1px solid #F16D7F
 
 
-.registration__button:hover .vector path 
+.registration__button:hover .vector path
   fill: #F16D7F
 
 @import m768
 @import ms375
+
+.basket
+  position: absolute
+  z-index: 3
+  right: 0
+  top: 37px
+  background: white
+  padding: 10px
+  border: 1px solid #ebebeb
+  border-radius: 3px
+  font-size: 14px
+
+.basketRow
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 10px
+  margin-bottom: 10px
+  border-bottom: 1px solid #ebebeb
+  padding-bottom: 10px
+
+.basketHeader
+  font-weight: bold
+
+
+.basketTotal
+  font-weight: bold
+  text-align: right
+
+
+@media (min-width: 340px)
+.basket
+  font-size: 16px
+
+@media (min-width: 552px)
+.basket
+  width: 500px
+
+
